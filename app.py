@@ -70,7 +70,8 @@ def documents():
         {"name": "Risk Register", "file": "Risk Register.pdf", "type": "pdf", "icon": "ph-file-pdf"},
         {"name": "DevCore Project Document", "file": "DevCore Project Document.2.3.docx", "type": "docx", "icon": "ph-file-doc"},
         {"name": "Interview Questions", "file": "Interview Questions.docx", "type": "docx", "icon": "ph-file-doc"},
-        {"name": "Gantt Chart DevCore", "file": "Gantt Chart DevCore.xlsx", "type": "xlsx", "icon": "ph-file-xls"}
+        {"name": "Gantt Chart DevCore", "file": "Gantt Chart DevCore.xlsx", "type": "xlsx", "icon": "ph-file-xls"},
+        {"name": "Network Diagram", "file": "Network Diagram.pdf", "type": "pdf", "icon": "ph-file-pdf"}
     ]
     return render_template('documents.html', documents=documents_list, dances=data.get('dances', []))
 
