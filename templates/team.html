@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Meet the Team | Mangaung Dances{% endblock %}
+
+{% block content %}
+<header class="py-5 bg-dark text-white text-center pt-5 mt-5"
+    style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+    <div class="container pt-4">
+        <h1 class="display-4 fw-bold fade-in-up">Meet the <span class="text-accent">Team</span></h1>
+        <p class="lead text-white-50 fade-in-up delay-1">The dedicated minds behind this project.</p>
+    </div>
+</header>
+
+<div class="container py-5 mt-3 mb-5">
+    <div class="row g-4 justify-content-center">
+        <!-- Team Member 1 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-1">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 bg-secondary text-white"
+                    style="background-image: url('{{ url_for('static', filename='images/tshepang1.jpeg') }}'); background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Tshepang Paballo Mofokeng</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 224008826</span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Project Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-2">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 bg-secondary text-white"
+                    style="background-image: url('{{ url_for('static', filename='images/luyanda.jpeg') }}'); background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Luyanda Mfuphi</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 224053974</span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Lead Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 bg-secondary text-white"
+                    style="background-image: url('{{ url_for('static', filename='images/mahlale.jpeg') }}'); background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Mahlale Molefi</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 224008698</span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Technical Lead</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-1">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 bg-secondary text-white"
+                    style="background-image: url('{{ url_for('static', filename='images/tabi.jpeg') }}'); background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Malefetsane Tabi</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 224124912</span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Risk Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-2">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 bg-secondary text-white"
+                    style="background-image: url('{{ url_for('static', filename='images/ranch.jpeg') }}'); background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Machaea Ranthako</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 222015743 </span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Content Researcher</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 6 -->
+        <div class="col-lg-4 col-md-6 fade-in-up delay-3">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden text-center glass-card">
+                <div class="ratio ratio-1x1 text-white"
+                    style="background-color: #000000; background-size: cover; background-position: center;">
+                    <!-- Placeholder Image -->
+                </div>
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-1">Magaleng Madike</h4>
+                    <span class="badge bg-light text-dark fw-bold mb-3">Student #: 221023288</span>
+                    <p class="text-accent-secondary fw-bold small text-uppercase tracking-wider">Quality Assurance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

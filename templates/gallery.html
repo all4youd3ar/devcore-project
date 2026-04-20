@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery | Mangaung Dances{% endblock %}
+
+{% block content %}
+<header class="py-5 bg-dark text-center pt-5 mt-5"
+    style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+    <div class="container pt-4 text-white">
+        <h1 class="display-4 fw-bold fade-in-up">Visual <span class="text-accent">Journey</span></h1>
+        <p class="lead text-white-50 fade-in-up delay-1">A curated gallery of moments capturing the heart of our
+            community dances.</p>
+    </div>
+</header>
+
+<div class="container py-5 mt-3 mb-5">
+    <div class="row g-4" id="galleryGrid">
+        {% for item in items %}
+        <div class="col-lg-4 col-md-6 fade-in-up scale-hover">
+            <div class="gallery-item-wrapper rounded-4 overflow-hidden position-relative shadow-sm cursor-pointer"
+                onclick="openLightbox({{ loop.index0 }})">
+                <img src="{{ item.src }}" alt="{{ item.caption }}" class="img-fluid w-100 object-cover"
+                    style="height: 300px; background-color: #333;">
+                <div class="gallery-overlay position-absolute bottom-0 start-0 w-100 p-3"
+                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                    <p class="text-white mb-0 fw-light small"><i class="ph-bold ph-camera me-1"></i> {{ item.caption }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body text-center position-relative">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="" id="lightboxImage" class="img-fluid rounded shadow-lg" alt="Fullscreen Image"
+                    style="max-height: 85vh;">
+                <p id="lightboxCaption" class="text-white mt-3 lead fw-light"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript variables for Lightbox -->
+<script>
+    const galleryItems = {{ items | tojson | safe }};
+</script>
+{% endblock %}

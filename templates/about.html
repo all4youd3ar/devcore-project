@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}About | Mangaung Dances{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5 pt-5 mb-5">
+
+    <!-- Project Purpose & Reflections -->
+    <div class="row g-5 align-items-center mb-5 pb-5 border-bottom border-light">
+        <div class="col-lg-6 fade-in-up">
+            <span class="text-accent fw-bold tracking-wider text-uppercase small">Our Mission</span>
+            <h1 class="display-5 fw-bold mb-4 mt-2">Preserving Culture Through <span
+                    class="text-accent-secondary">Technology</span></h1>
+            <p class="lead text-muted mb-4">This educational project was undertaken to document, present, and analyze
+                the cultural significance of traditional dances in the Mangaung region.</p>
+            <p class="text-muted">By leveraging web technologies, we aim to transform academic research into an
+                accessible, engaging, and interactive experience for local communities, historians, and dance
+                enthusiasts alike.</p>
+
+            <div class="mt-5 p-4 bg-light-modern rounded-4 border-start border-4 border-accent">
+                <h5 class="fw-bold"><i class="ph-duotone ph-lightbulb me-2 text-accent"></i> Key Takeaways</h5>
+                <ul class="text-muted mt-3 mb-0 lh-lg ps-3">
+                    <li>The deep intersection between historical events and choreography.</li>
+                    <li>Challenges and rewards of multimedia archiving.</li>
+                    <li>Importance of accessible digital platforms for cultural preservation.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6 fade-in-up delay-1">
+            <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1540324155974-7523202daa3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    class="img-fluid rounded-4 shadow-lg" alt="Team Discussion">
+                <div class="position-absolute bottom-0 start-0 translate-middle-x mb-5 ms-3 d-none d-md-block">
+                    <div class="bg-white p-4 rounded-4 shadow border border-light">
+                        <h3 class="fw-bold mb-0 text-dark">2026</h3>
+                        <p class="text-muted small mb-0 fw-bold">Project Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="text-center mb-5 fade-in-up">
+        <h2 class="display-6 fw-bold">Meet the <span class="text-accent">Team</span></h2>
+        <p class="text-muted">The dedicated students behind this research project.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center pt-2">
+        <!-- Team Member 1 -->
+        <div class="col-md-4 fade-in-up delay-1">
+            <div class="card border-0 shadow-hover text-center rounded-4 h-100 p-4">
+                <div class="mx-auto mt-3 mb-4 icon-wrapper bg-accent-light rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 80px; height: 80px;">
+                    <i class="ph-duotone ph-user fs-1 text-accent"></i>
+                </div>
+                <h4 class="fw-bold">Student Name</h4>
+                <p class="text-accent-secondary fw-bold small">Project Manager</p>
+                <p class="text-muted small mt-2">Overseeing development timelines, assigning tasks, and ensuring
+                    academic standards are met.</p>
+            </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-md-4 fade-in-up delay-2">
+            <div class="card border-0 shadow-hover text-center rounded-4 h-100 p-4">
+                <div class="mx-auto mt-3 mb-4 icon-wrapper bg-accent-light rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 80px; height: 80px;">
+                    <i class="ph-duotone ph-code fs-1 text-accent"></i>
+                </div>
+                <h4 class="fw-bold">Student Name</h4>
+                <p class="text-accent-secondary fw-bold small">Lead Developer</p>
+                <p class="text-muted small mt-2">Responsible for building the Flask backend and crafting the interactive
+                    frontend experience.</p>
+            </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-md-4 fade-in-up delay-3">
+            <div class="card border-0 shadow-hover text-center rounded-4 h-100 p-4">
+                <div class="mx-auto mt-3 mb-4 icon-wrapper bg-accent-light rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 80px; height: 80px;">
+                    <i class="ph-duotone ph-shield-check fs-1 text-accent"></i>
+                </div>
+                <h4 class="fw-bold">Student Name</h4>
+                <p class="text-accent-secondary fw-bold small">Risk Manager & Researcher</p>
+                <p class="text-muted small mt-2">Identifying project risks, managing resources, and conducting primary
+                    cultural research.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

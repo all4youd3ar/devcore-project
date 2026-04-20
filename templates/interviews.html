@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Interviews | Mangaung Dances{% endblock %}
+
+{% block content %}
+<header class="py-5 bg-light-modern border-bottom text-center pt-5 mt-5">
+    <div class="container pt-4">
+        <h1 class="display-4 fw-bold text-dark fade-in-up">Voices of <span class="text-accent">Mangaung</span></h1>
+        <p class="lead text-muted fade-in-up delay-1">Hear directly from the practitioners, elders, and youth keeping
+            the culture alive.</p>
+    </div>
+</header>
+
+<div class="container py-5 mb-5 mt-3">
+    <div class="row g-4 pt-4">
+        {% for interview in interviews %}
+        <div class="col-lg-4 col-md-6 fade-in-up delay-{{ loop.index }}">
+            <div class="card h-100 shadow-hover border-0 rounded-4 overflow-hidden glass-card">
+                <!-- Video Embedding replacing Image or along with it -->
+                <div class="card-img-top ratio ratio-16x9 placeholder-glow">
+                    <iframe src="{{ interview.video }}" title="{{ interview.name }} Interview" allowfullscreen></iframe>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="avatar-placeholder rounded-circle bg-accent d-flex align-items-center justify-content-center text-dark fw-bold me-3 shadow-sm"
+                            style="width: 50px; height: 50px; font-size: 1.2rem;">
+                            {{ interview.name[0] }}
+                        </div>
+                        <div>
+                            <h4 class="card-title fw-bold mb-0">{{ interview.name }}</h4>
+                            <p class="text-accent-secondary small fw-bold mb-0">{{ interview.role }}</p>
+                        </div>
+                    </div>
+                    <p class="card-text text-muted mb-4">{{ interview.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

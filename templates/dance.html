@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}{{ dance.name }} | Mangaung Dances{% endblock %}
+
+{% block content %}
+<!-- Dance Header -->
+<header class="py-5 bg-dark text-white text-center position-relative"
+    style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container pt-5">
+        <h1 class="display-4 fw-bold text-accent fade-in-up">{{ dance.name }}</h1>
+        <p class="lead fade-in-up delay-1">Traditional Dance of the Basotho</p>
+    </div>
+</header>
+
+<div class="container py-5 mt-4">
+    <div class="row g-5">
+        <!-- Main Content -->
+        <div class="col-lg-8 fade-in-up">
+            <section class="mb-5 p-4 bg-white shadow-sm rounded-4 border-start border-4 border-accent">
+                <h3 class="fw-bold mb-3 d-flex align-items-center"><i
+                        class="ph-duotone ph-book-open text-accent me-2 fs-2"></i> History</h3>
+                <p class="text-muted lh-lg" style="font-size: 1.1rem;">{{ dance.history }}</p>
+            </section>
+
+            <section class="mb-5 p-4 bg-white shadow-sm rounded-4 border-start border-4 border-accent">
+                <h3 class="fw-bold mb-3 d-flex align-items-center"><i
+                        class="ph-duotone ph-users-three text-accent me-2 fs-2"></i> Cultural Significance</h3>
+                <p class="text-muted lh-lg" style="font-size: 1.1rem;">{{ dance.cultural_significance }}</p>
+            </section>
+
+            <section class="mb-5 p-4 bg-white shadow-sm rounded-4 border-start border-4 border-accent">
+                <h3 class="fw-bold mb-3 d-flex align-items-center"><i
+                        class="ph-duotone ph-palette text-accent me-2 fs-2"></i> Artistic Elements</h3>
+                <p class="text-muted lh-lg" style="font-size: 1.1rem;">{{ dance.artistic_elements }}</p>
+            </section>
+        </div>
+
+        <!-- Sidebar / Media -->
+        <div class="col-lg-4 fade-in-up delay-1">
+            <div class="card shadow-sm border-0 mb-4 rounded-4 overflow-hidden position-sticky" style="top: 100px;">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="mb-0 fw-bold"><i class="ph-fill ph-video-camera me-2 text-accent"></i> Performance</h5>
+                </div>
+                <!-- Embedded Video -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="{{ dance.performance_video }}" title="{{ dance.name }} Performance"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="card-body bg-light">
+                    <p class="text-muted small mb-0"><i class="ph-fill ph-info-cursor me-1"></i> Video demonstration of
+                        the {{ dance.name }} dance techniques.</p>
+                </div>
+            </div>
+
+            <div class="card bg-accent-secondary text-white shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 text-center">
+                    <i class="ph-duotone ph-asterisk mb-3 fs-1 text-accent"></i>
+                    <h5 class="fw-bold mb-2">Did You Know?</h5>
+                    <p class="mb-0 text-white-50 small">{{ dance.group_info }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

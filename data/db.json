@@ -1,0 +1,83 @@
+{
+  "dances": [
+    {
+      "id": 1,
+      "name": "BSA CUT",
+      "history": "The Botswana Student Association (BSA) at the Central University of Technology (CUT) was formed to unite and support students from Botswana studying in South Africa. It serves as a home away from home, fostering a strong sense of community and preserving Botswana's rich cultural heritage.",
+      "cultural_significance": "BSA CUT plays a crucial role in maintaining cultural identity among international students. It celebrates the vibrant traditions of Botswana through various events, ensuring that students remain connected to their roots while navigating their academic journeys.",
+      "artistic_elements": "The association frequently showcases traditional Botswana customs, including vibrant cultural attire, rhythmic poetry, and dynamic folk dances that highlight the country's diverse ethnic groups and celebrations.",
+      "group_info": "Botswana Student Association, CUT Chapter.",
+      "performance_video": "https://www.youtube.com/embed/ScMzIvxBSi4",
+      "interview_clip": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    },
+    {
+      "id": 2,
+      "name": "Famo",
+      "history": "Famo music and dance originated in the early 20th century among Basotho migrant mineworkers. It started as a form of social commentary and storytelling through music.",
+      "cultural_significance": "Famo is a vital expression of the working-class experiences and has grown into a powerful cultural identifier for many in the Mangaung region.",
+      "artistic_elements": "Accompanied by the accordion and oil-can drum, Famo dancing involves energetic, rhythmic stepping and the waving of the lebolobolo (stick). Dancers often adorn themselves in specific blankets indicating their affiliations.",
+      "group_info": "Thokoza Famo Performers.",
+      "performance_video": "https://www.youtube.com/embed/53NbZgdSfvs?si=4tLD9zO8yifj3rkz",
+      "interview_clip": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    },
+    {
+      "id": 3,
+      "name": "Mohobelo",
+      "history": "Mohobelo is the traditional men's dance of the Basotho, originally a war dance or an expression of masculine strength, often characterized by high kicks and stomping.",
+      "cultural_significance": "Today, Mohobelo is performed in Mangaung to honor ancestors, celebrate harvests, and instill a sense of pride and discipline among young men in the community.",
+      "artistic_elements": "The choreography involves coordinated, high-kicking leaps and stomping, accompanied by rhythmic chanting and singing. Dancers often wear Basotho hats (mokorotlo) and traditional blankets.",
+      "group_info": "Mangaung Warriors Dance Troupe.",
+      "performance_video": "https://www.youtube.com/embed/ozKHpcFLC2k?si=T09pas2ohzEWVTtQ",
+      "interview_clip": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    }
+  ],
+  "interviews": [
+    {
+      "name": "Mme Puleng",
+      "role": "Lead Mokhibo Dancer",
+      "description": "Mme Puleng shares her journey of learning Mokhibo from her grandmother and the importance of passing it to the youth.",
+      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+1",
+      "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    },
+    {
+      "name": "Ntate Lerato",
+      "role": "Famo Accordionist",
+      "description": "Ntate Lerato discusses the evolution of Famo music and its connection to the stories of Mangaung.",
+      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+2",
+      "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    },
+    {
+      "name": "Thabo Mokoena",
+      "role": "Mohobelo Choreographer",
+      "description": "Thabo explains the discipline required for Mohobelo and its role in modern cultural expression.",
+      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+3",
+      "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/static/images/exhibition1.jpeg",
+      "caption": "BSA CUT members gathering for a vibrant cultural exhibition."
+    },
+    {
+      "src": "/static/images/exhibition2.jpeg",
+      "caption": "Students showcasing Botswana's rich heritage on campus."
+    },
+    {
+      "src": "/static/images/exhibition3.jpeg",
+      "caption": "A display of cultural pride by the Botswana Student Association."
+    },
+    {
+      "src": "/static/images/exhibition4.jpeg",
+      "caption": "Celebrating unity and tradition at a BSA CUT campus event."
+    },
+    {
+      "src": "/static/images/mohobelo.png",
+      "caption": "Men performing the energetic Mohobelo dance, an expression of Basotho stamina, teamwork, and cultural pride."
+    },
+    {
+      "src": "/static/images/mohobelo2.png",
+      "caption": "Another glimpse into the powerful Mohobelo performance, showcasing synchronized movements and deep cultural roots."
+    }
+  ]
+}

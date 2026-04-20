@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Mangaung Dances{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<header class="hero text-white d-flex align-items-center"
+    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1549231649-fb93be1e39a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; min-height: 80vh;">
+    <div class="container text-center hero-content">
+        <span class="badge bg-accent text-dark mb-3 px-3 py-2 rounded-pill shadow-sm">Academic Project</span>
+        <h1 class="display-3 fw-bold mb-4 mt-2 fade-in-up">Dance Performances in<br><span class="text-accent">Mangaung
+                Community</span></h1>
+        <p class="lead mb-5 fade-in-up delay-1 mx-auto" style="max-width: 700px;">
+            Exploring the history, cultural significance, and artistic elements of traditional dances in the Mangaung
+            region. Join us in celebrating these vibrant expressions of heritage.
+        </p>
+        <div class="fade-in-up delay-2">
+            <a href="#dances-overview"
+                class="btn btn-accent btn-lg px-5 py-3 rounded-pill me-3 shadow glass-btn">Explore Dances</a>
+            <a href="{{ url_for('gallery') }}"
+                class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill glass-btn">View Gallery</a>
+        </div>
+    </div>
+</header>
+
+<!-- Overview Section -->
+<section id="dances-overview" class="py-5 bg-light-modern section-padding">
+    <div class="container mt-4">
+        <div class="text-center mb-5 pb-3">
+            <h2 class="section-title fw-bold">Featured <span class="text-accent-secondary">Dance Styles</span></h2>
+            <p class="text-muted">Discover the three primary traditional dances deeply rooted in the Mangaung community.
+            </p>
+        </div>
+
+        <div class="row g-4 pt-2">
+            {% for dance in dances %}
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover glass-card overflow-hidden">
+                    <div class="card-img-placeholder bg-dark text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px; background-image: url('https://images.unsplash.com/photo-1516934528148-3561bed3cf88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center;">
+                        <h3 class="fw-bold position-relative z-1">{{ dance.name }}</h3>
+                        <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <p class="card-text text-muted mb-4">{{ dance.history[:120] }}...</p>
+                        <a href="{{ url_for('dance', dance_id=dance.id) }}"
+                            class="btn btn-outline-dark mt-auto align-self-start rounded-pill px-4 stretched-link">Read More <i
+                                class="ph-bold ph-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Highlight Reel Section (Extra Feature) -->
+<section class="py-5 banner-dark position-relative" style="color: #000080;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <h3 class="display-5 fw-bold mb-3" style="color: #000080;">Experience the Rhythm</h3>
+                <p class="lead mb-4" style="color: #000080; opacity: 0.85;">Watch our exclusive highlight reel showcasing the vibrant energy,
+                    elaborate costumes, and rhythmic mastery of Mangaung's finest performers.</p>
+                <a href="{{ url_for('gallery') }}" class="btn btn-accent rounded-pill px-4 py-2"><i
+                        class="ph-fill ph-play-circle me-2"></i> Watch Performances</a>
+            </div>
+            <div class="col-lg-7 position-relative">
+                <div class="video-wrapper shadow-lg rounded-4 overflow-hidden border border-light border-opacity-25">
+                    <!-- YouTube Embed (Placeholder highlight reel) -->
+                    <iframe width="100%" height="400"
+                        src="https://www.youtube.com/embed/ScMzIvxBSi4?controls=0&mute=1&autoplay=1&loop=1&playlist=ScMzIvxBSi4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="pointer-events: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

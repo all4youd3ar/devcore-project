@@ -1,0 +1,217 @@
+/* Google Fonts Integration */
+:root {
+    --primary-font: 'Outfit', sans-serif;
+    --accent-color: #fca311; /* Vibrant Orange/Gold */
+    --accent-secondary: #e5e5e5;
+    --dark-bg: #14213d; 
+    --light-bg: #f8f9fa;
+    --text-main: #333333;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-main);
+    background-color: var(--light-bg);
+    overflow-x: hidden;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.03em;
+}
+
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.text-accent-secondary {
+    color: var(--accent-secondary) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent-color) !important;
+}
+
+.bg-accent-light {
+    background-color: rgba(252, 163, 17, 0.1) !important;
+}
+
+.bg-accent-secondary {
+    background-color: var(--dark-bg) !important;
+}
+
+.bg-light-modern {
+    background-color: #fafbfa !important; /* Very subtle warm gray */
+}
+
+/* Navbar Customizations */
+.custom-navbar {
+    background-color: transparent;
+    transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    padding: 1.5rem 0;
+}
+
+.custom-navbar.scrolled {
+    background-color: rgba(20, 33, 61, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.8);
+    font-weight: 400;
+    margin: 0 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.custom-search-form input {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 20px;
+}
+
+.custom-search-form input:focus {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.custom-search-form input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.custom-search-form .btn {
+    border-radius: 20px;
+}
+
+/* Buttons */
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #e08f0a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(252, 163, 17, 0.3);
+}
+
+.glass-btn {
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.glass-btn.btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* Base Styles & Utilities */
+.section-padding {
+    padding: 6rem 0;
+}
+
+/* Component Overrides & Polish */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+.rounded-4 {
+    border-radius: 1.25rem !important;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: rgba(255,255,255,0.7);
+    border-top: 4px solid var(--accent-color);
+}
+
+.social-links a:hover {
+    color: var(--accent-color) !important;
+    transform: scale(1.1);
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gallery & Specific Elements */
+.object-cover {
+    object-fit: cover;
+}
+
+.gallery-item-wrapper {
+    transition: transform 0.4s ease;
+}
+
+.scale-hover:hover .gallery-item-wrapper {
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Floating animation for icons */
+.icon-wrapper {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Contact/Forms */
+.overlay-bg {
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(248,249,250,1) 100%);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+textarea {
+    resize: none;
+}
