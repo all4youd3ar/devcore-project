@@ -33,24 +33,10 @@
   ],
   "interviews": [
     {
-      "name": "Mme Puleng",
-      "role": "Lead Mokhibo Dancer",
-      "description": "Mme Puleng shares her journey of learning Mokhibo from her grandmother and the importance of passing it to the youth.",
-      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+1",
-      "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
-    },
-    {
-      "name": "Ntate Lerato",
-      "role": "Famo Accordionist",
-      "description": "Ntate Lerato discusses the evolution of Famo music and its connection to the stories of Mangaung.",
-      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+2",
-      "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
-    },
-    {
-      "name": "Thabo Mokoena",
-      "role": "Mohobelo Choreographer",
-      "description": "Thabo explains the discipline required for Mohobelo and its role in modern cultural expression.",
-      "photo": "https://placehold.co/400x400/14213d/fca311?text=Interview+3",
+      "name": "All members of the DEVCORE",
+      "role": "Project Development Team",
+      "description": "The full DEVCORE team discusses the research process, community engagement, and the technical journey behind documenting Mangaung's cultural dance heritage.",
+      "photo": "https://placehold.co/400x400/14213d/fca311?text=DEVCORE+Interview",
       "video": "https://www.youtube.com/embed/ScMzIvxBSi4"
     }
   ],
