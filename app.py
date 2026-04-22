@@ -68,7 +68,7 @@ def documents():
         {"name": "Dance Research", "file": "Dance Research.pdf", "type": "pdf", "icon": "ph-file-pdf"},
         {"name": "Project Charter", "file": "Project Charter.pdf", "type": "pdf", "icon": "ph-file-pdf"},
         {"name": "Risk Register", "file": "Risk Register.pdf", "type": "pdf", "icon": "ph-file-pdf"},
-        {"name": "DevCore Project Document", "file": "DevCore Project Document.2.3.docx", "type": "docx", "icon": "ph-file-doc"},
+        {"name": "DevCore Project Document", "file": "DevCore Project Document.2.4.docx", "type": "docx", "icon": "ph-file-doc"},
         {"name": "Interview Questions", "file": "Interview Questions.docx", "type": "docx", "icon": "ph-file-doc"},
         {"name": "Gantt Chart DevCore", "file": "Gantt Chart DevCore.xlsx", "type": "xlsx", "icon": "ph-file-xls"},
         {"name": "Network Diagram", "file": "Network Diagram.pdf", "type": "pdf", "icon": "ph-file-pdf"}
